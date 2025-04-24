@@ -1,19 +1,20 @@
-FROM node:18-alpine
+# Base image
+FROM node:20.14.0
 
-# Thư mục làm việc trong container
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy file cấu hình package
+# Copy package.json and package-lock.json
 COPY package.json package-lock.json ./
 
-# Cài dependency
+# Install dependencies
 RUN npm install
 
-# Copy toàn bộ mã nguồn vào container
+# Copy the source code
 COPY . .
 
-# Mở cổng mặc định của Next.js
+# Expose the port on which the server will run
 EXPOSE 3000
 
-# Lệnh khởi chạy dev server
+# Start the server
 CMD ["npm", "run", "dev"]
