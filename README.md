@@ -11,8 +11,10 @@
 ## Clone 
 
 ```
+$ mkdir app
 $ cd app/
 $ git clone git@github.com:lamnd9/01-next-rn.git next
+$ git clone git@github.com:lamnd9/02_nest_rn.git nest
 ```
 
 ## run docker
