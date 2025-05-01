@@ -23,3 +23,8 @@ $ git clone git@github.com:lamnd9/02_nest_rn.git nest
 $ docker-compose build
 $ docker-compose up -d
 ```
+
+## mongodb
+- [mongodb compass download](https://www.mongodb.com/try/download/compass)
+
+- connection string: mongodb://localhost:27017/mydatabase
